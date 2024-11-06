@@ -1,0 +1,22 @@
+{
+    "name": "Installment Management",
+    "version": "1.0",
+    "category": "Sales",
+    "summary": "Manage customer installments and payments",
+    "author": "Joey",
+    "license": "LGPL-3",
+    "sequence": -99,
+    "depends": ["base", "sale", "account"],
+    "data": [
+        "security/groups.xml",
+        "security/security.xml",
+        "security/ir.model.access.csv",
+        "wizard/create_payment_wizard.xml",
+        "views/installment.xml",
+        "views/menu.xml",
+        "views/account_move.xml",
+        "data/data.xml",
+    ],
+    "application": True,
+    "installable": True,
+}

@@ -1,0 +1,62 @@
+<odoo>
+  <data>
+    <record id="access_installment_user" model="ir.rule">
+      <field name="name">Installment User Access</field>
+      <field name="model_id" ref="installment_management.model_installment_installment" />
+      <field name="groups" eval='[(4, ref("installment_management.group_installment_user"))]' />
+      <field name="perm_read" eval="1" />
+      <field name="perm_create" eval="1" />
+      <field name="perm_write" eval="1" />
+      <field name="perm_unlink" eval="0" />
+    </record>
+
+    <record id="access_installment_manager" model="ir.rule">
+      <field name="name">Installment Manager Access</field>
+      <field name="model_id" ref="installment_management.model_installment_installment" />
+      <field name="groups" eval='[(4, ref("installment_management.group_installment_manager"))]' />
+      <field name="perm_read" eval="1" />
+      <field name="perm_create" eval="1" />
+      <field name="perm_write" eval="1" />
+      <field name="perm_unlink" eval="1" />
+    </record>
+  </data>
+</odoo>
+
+<!-- <odoo> -->
+<!--   <data> -->
+<!--     <record id="group_installment_user" model="res.groups"> -->
+<!--       <field name="name">Installment User</field> -->
+<!--       <field name="implied_ids" eval="[(4, ref('base.group_user'))]" /> -->
+<!--       <field name="category_id" ref="base.module_category_sales" /> -->
+<!--     </record> -->
+<!--     <record id="group_installment_manager" model="res.groups"> -->
+<!--       <field name="name">Installment Manager</field> -->
+<!--       <field name="implied_ids" eval="[(4, ref('base.group_user'))]" /> -->
+<!--       <field name="category_id" ref="base.module_category_sales" /> -->
+<!--     </record> -->
+<!--     <record id="group_installment_payments" model="res.groups"> -->
+<!--       <field name="name">Installment Payments</field> -->
+<!--       <field name="implied_ids" eval="[(4, ref('base.group_user'))]" /> -->
+<!--       <field name="category_id" ref="base.module_category_sales" /> -->
+<!--     </record> -->
+<!--     <record id="access_installment_user" model="ir.model.access"> -->
+<!--       <field name="name">Installment User Access</field> -->
+<!--       <field name="model_id" ref="model_installment_installment" /> -->
+<!--       <field name="group_id" ref="group_installment_user" /> -->
+<!--       <field name="perm_read" eval="1" /> -->
+<!--       <field name="perm_create" eval="1" /> -->
+<!--       <field name="perm_write" eval="1" /> -->
+<!--       <field name="perm_unlink" eval="0" /> -->
+<!--     </record> -->
+<!--     <record id="access_installment_manager" model="ir.model.access"> -->
+<!--       <field name="name">Installment Manager Access</field> -->
+<!--       <field name="model_id" ref="model_installment_installment" /> -->
+<!--       <field name="group_id" ref="group_installment_manager" /> -->
+<!--       <field name="perm_read" eval="1" /> -->
+<!--       <field name="perm_create" eval="1" /> -->
+<!--       <field name="perm_write" eval="1" /> -->
+<!--       <field name="perm_unlink" eval="1" /> -->
+<!--     </record> -->
+<!--   </data> -->
+<!-- </odoo> -->
+

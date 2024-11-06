@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <menuitem id="installment_root"
+    name="Installments"
+    parent="account.menu_finance_receivables"
+    groups="installment_management.group_installment_user" />
+
+  <menuitem id="installment_cust_root"
+    name="Customer installments"
+    parent="installment_root"
+    action="action_installment_menu"
+  />
+
+
+</odoo>
+
